@@ -1,2 +1,2 @@
 # Project 2
-## By Aidan A.
+## By: Aidan A.
