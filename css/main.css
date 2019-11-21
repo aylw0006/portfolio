@@ -1,1 +1,72 @@
 /* header must equal 40% viewport height*/
+.jumbotron {
+    height: 40vh;
+}
+
+.rounded-circle {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.content {
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+    margin: 50px;
+    
+}
+.row img {
+    width: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.75s ease;
+    background-color: #E9ECEF;
+    border-radius: 30px;
+}
+#overlay-html{
+    background-color: hsl(12, 30%, 70%);
+}
+#overlay-css{
+    background-color: hsl(205, 30%, 70%)
+}
+#overlay-js{
+    background-color: hsl(53, 60%, 70%)
+}
+#overlay-bs{
+    background-color: hsl(264, 20%, 70%)
+}
+#overlay-python{
+    background-color: hsl(207, 30%, 70%)
+}
+#overlay-mysql{
+    background-color: hsl(196, 25%, 70%)
+}
+.col-sm:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
