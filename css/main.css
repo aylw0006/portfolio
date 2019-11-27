@@ -1,5 +1,5 @@
 .jumbotron {
-  height: 40vh;
+  height: 45vh;
 }
 
 .rounded-circle {
@@ -8,35 +8,31 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  border: 0.5rem solid #5500ff;
+  border: 0.4rem solid #5500ff;
   transition: border 0.45s linear 2s;
   animation: colorChanges 5s infinite alternate;
 }
 
 @keyframes colorChanges {
   0% {
-    border: 0.5rem solid #5500ff;
+    border: 0.4rem solid #5500ff;
   }
   20% {
-    border: 0.5rem solid fuchsia;
+    border: 0.4rem solid fuchsia;
   }
   40% {
-    border: 0.5rem solid #ff002b;
+    border: 0.4rem solid #ff002b;
   }
   60% {
-    border: 0.5rem solid #ffaa00;
+    border: 0.4rem solid #ffaa00;
   }
   80% {
-    border: 0.5rem solid #80ff00;
+    border: 0.4rem solid #80ff00;
   }
   100% {
-    border: 0.5rem solid #00d5ff;
+    border: 0.4rem solid #00d5ff;
   }
 }
-.content {
-  text-align: center;
-}
-
 .row {
   text-align: center;
   margin: 50px;
@@ -106,6 +102,35 @@
 .card:hover {
   box-shadow: 0px 5px #b3b3b3;
   transform: translate(0px, -3px);
+}
+
+#pageTitle {
+  text-align: center;
+  padding: 3rem;
+}
+
+#submitButton:hover {
+  background-color: #bfbfbf;
+}
+
+#contactForm {
+  margin: auto;
+}
+
+@media (min-width: 850px) {
+  #contactForm {
+    max-width: 60rem;
+  }
+}
+@media (max-width: 575px) {
+  .jumbotron {
+    height: 40vh;
+  }
+}
+@media (max-width: 767px) {
+  .secondaryBox {
+    margin: 3rem 0 0 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

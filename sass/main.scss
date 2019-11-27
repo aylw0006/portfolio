@@ -1,5 +1,8 @@
+$dgrey: 	hsl(210, 0%, 75%);
+$borderSize: 0.40rem;
+
 .jumbotron {
-    height: 40vh;
+    height: 45vh;
 }
   
 .rounded-circle {
@@ -8,41 +11,36 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    border: 0.5rem solid hsl(260deg, 100%, 50%);
+    border: $borderSize solid hsl(260deg, 100%, 50%);
     transition: border 0.45s linear 2s;
     animation: colorChanges 5s infinite alternate;
 }
   
 @keyframes colorChanges {
     0% {
-      border: 0.5rem solid hsl(260deg, 100%, 50%);
+      border: $borderSize solid hsl(260deg, 100%, 50%);
     }
   
     20% {
-      border: 0.5rem solid hsl(300deg, 100%, 50%);
+      border: $borderSize solid hsl(300deg, 100%, 50%);
     }
   
     40% {
-      border: 0.5rem solid hsl(350deg, 100%, 50%);
+      border: $borderSize solid hsl(350deg, 100%, 50%);
     }
   
     60% {
-      border: 0.5rem solid hsl(400deg, 100%, 50%);
+      border: $borderSize solid hsl(400deg, 100%, 50%);
     }
   
     80% {
-      border: 0.5rem solid hsl(450deg, 100%, 50%);
+      border: $borderSize solid hsl(450deg, 100%, 50%);
     }
   
     100% {
-      border: 0.5rem solid hsl(550deg, 100%, 50%);
+      border: $borderSize solid hsl(550deg, 100%, 50%);
     }
 }
-  
-.content {
-    text-align: center;
-}
-  
 .row {
     text-align: center;
     margin: 50px;
@@ -114,4 +112,36 @@
       box-shadow: 0px 5px hsl(0deg, 0%, 70%);
       transform: translate(0px, -3px);
     }
+}
+
+#pageTitle {
+  text-align: center;
+  padding: 3rem;
+}
+
+#submitButton:hover {
+  background-color: $dgrey;
+}
+
+
+#contactForm {
+  margin: auto;
+}
+
+@media (min-width: 850px) {
+  #contactForm {
+    max-width: 60rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .jumbotron{
+    height: 40vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .secondaryBox {
+    margin: 3rem 0 0 0;
+  }
 }
