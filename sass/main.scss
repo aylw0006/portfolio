@@ -148,3 +148,9 @@ $borderSize: 0.40rem;
     margin: 3rem 0 0 0;
   }
 }
+
+@media (min-width: 1500px) {
+  .card-deck {
+    padding: 0 5rem;
+  }
+}
