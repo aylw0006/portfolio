@@ -1,8 +1,14 @@
-$dgrey: 	hsl(210, 0%, 75%);
+$dgrey: 	hsl(0, 0%, 75%);
+$lgrey: hsl(0, 0%, 90%);
 $borderSize: 0.40rem;
 
 .jumbotron {
     height: 45vh;
+    background-color: $lgrey;
+}
+
+.navbar:hover {
+  color: $dgrey;
 }
   
 .rounded-circle {
@@ -41,6 +47,7 @@ $borderSize: 0.40rem;
       border: $borderSize solid hsl(550deg, 100%, 50%);
     }
 }
+
 .row {
     text-align: center;
     margin: 50px;
@@ -109,7 +116,7 @@ $borderSize: 0.40rem;
     transition: box-shadow 0.05s ease-in;
   
     &:hover {
-      box-shadow: 0px 5px hsl(0deg, 0%, 70%);
+      box-shadow: 0px 5px $dgrey;
       transform: translate(0px, -3px);
     }
 }
