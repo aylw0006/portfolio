@@ -7,14 +7,6 @@
   color: #bfbfbf;
 }
 
-.navbar-brand {
-  color: black;
-}
-
-.navbar-brand:hover {
-  color: #bfbfbf;
-}
-
 .rounded-circle {
   width: 200px;
   display: block;
