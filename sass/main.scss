@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 $dgrey: 	hsl(0, 0%, 75%);
-$lgrey: hsl(0, 0%, 90%);
+$lgrey: hsl(0, 0%, 95%);
 $borderSize: 0.40rem;
+
+html {
+  font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.nav-item {
+  font-weight: 500;
+  color: $lgrey;
+}
 
 .jumbotron {
     height: 45vh;
     background-color: $lgrey;
 }
 
-.navbar:hover {
-  color: $dgrey;
+.nav-colors {
+  color: hsl(260deg, 100%, 50%);
+  transition: color 0.45s linear 2s;
+  animation: colorChanges2 5s infinite alternate;
 }
   
 .rounded-circle {
@@ -46,6 +59,32 @@ $borderSize: 0.40rem;
     100% {
       border: $borderSize solid hsl(550deg, 100%, 50%);
     }
+}
+
+@keyframes colorChanges2 {
+  0% {
+    color: hsl(260deg, 100%, 50%);
+  }
+
+  20% {
+    color: hsl(300deg, 100%, 50%);
+  }
+
+  40% {
+    color: hsl(350deg, 100%, 50%);
+  }
+
+  60% {
+    color: hsl(400deg, 100%, 50%);
+  }
+
+  80% {
+    color: hsl(450deg, 100%, 50%);
+  }
+
+  100% {
+    color: hsl(550deg, 100%, 50%);
+  }
 }
 
 

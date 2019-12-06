@@ -1,10 +1,22 @@
-.jumbotron {
-  height: 45vh;
-  background-color: #e6e6e6;
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+html {
+  font-family: "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 }
 
-.navbar:hover {
-  color: #bfbfbf;
+.nav-item {
+  font-weight: 500;
+  color: #f2f2f2;
+}
+
+.jumbotron {
+  height: 45vh;
+  background-color: #f2f2f2;
+}
+
+.nav-colors {
+  color: #5500ff;
+  transition: color 0.45s linear 2s;
+  animation: colorChanges2 5s infinite alternate;
 }
 
 .rounded-circle {
@@ -36,6 +48,26 @@
   }
   100% {
     border: 0.4rem solid #00d5ff;
+  }
+}
+@keyframes colorChanges2 {
+  0% {
+    color: #5500ff;
+  }
+  20% {
+    color: fuchsia;
+  }
+  40% {
+    color: #ff002b;
+  }
+  60% {
+    color: #ffaa00;
+  }
+  80% {
+    color: #80ff00;
+  }
+  100% {
+    color: #00d5ff;
   }
 }
 .row {
