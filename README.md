@@ -1,2 +1,2 @@
-# Project 2
+# Portfolio Project
 ## By: Aidan A.
